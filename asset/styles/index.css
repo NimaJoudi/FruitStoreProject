@@ -1,11 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+  	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  	scroll-behavior: smooth;
+  	text-decoration: none;
+}
+
+button {
+	cursor: pointer;
+	transition: all 500ms;
+}
+
+button:hover {
+	transform: scale(1.1);
+}
+
+li {
+	cursor: pointer;
 }
 
 .navbar {
-    background-color: #0a490a;
+    background-color: #0A490A;
     display: flex;
     color: white;
     justify-content: space-evenly;
@@ -66,6 +82,29 @@
 
 .iconBox img {
     transform: scale(0.6);
+}
+
+/* mobile menu style  */
+.mobileSection {
+    width: 0;
+    color: white;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #0a490a;
+    transition: all 500ms;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 0;
+}
+.mobileSection:target {
+    width: 80%;
+    padding: 1.5rem;
+    opacity: 100;
 }
 
 .banner {
@@ -240,13 +279,13 @@
 
 .mainBannerBoxRight {
     background:
-        url(/assets/images/endProject/clem\ \(2\).png) center / cover no-repeat,
+        url(/assets/images/clem\ \(2\).png) center / cover no-repeat,
         rgba(0, 0, 0, 0.464);
 }
 
 .mainBannerBoxLeft {
     background:
-        url(/assets/images/endProject/clem\ \(1\).png) center / cover no-repeat,
+        url(/assets/images/clem\ \(1\).png) center / cover no-repeat,
         rgba(0, 0, 0, 0.464);
 }
 
@@ -257,21 +296,21 @@
 }
 
 .topScroll {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    color: #003500;
-    opacity: 30%;
-    transition: all 1s;
-    outline: 2px solid #003500;
-    outline-offset: 2px;
-    font-size: 1.5rem;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	color: #003500;
+	opacity: 30%;
+	transition: all 1s;
+	outline: 2px solid #003500;
+	outline-offset: 2px;
+	font-size: 1.5rem;
 }
 
 .topScroll:hover {
@@ -279,6 +318,23 @@
     box-shadow: 0 0 1rem #003500;
     background-color: #003500;
     color: white;
+}
+
+/* footer style  */
+.footerbackgroundBox {
+    height: 20rem;
+    width: 100%;
+    position: absolute;
+    top: -20rem;
+    background-color: #0a490a;
+    z-index: -1;
+}
+
+.emailbox {
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
 }
 
 /* CSS Classes */
@@ -298,6 +354,18 @@
     background-color: #ffc107;
 }
 
+.bg_orange {
+    background-color: #e46002;
+}
+
+.bg_pink {
+    background-color: #ef174b;
+}
+
+.bg_transparent {
+    background-color: transparent;
+}
+
 .text_white {
     color: #ffffff !important;
 }
@@ -311,7 +379,7 @@
 }
 
 .text_1 {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
 }
 
 .text_2 {
@@ -326,12 +394,20 @@
     font-size: 2rem;
 }
 
+.text_5 {
+    font-size: 3rem;
+}
+
 .text_bold {
     font-weight: bolder;
 }
 
 .text_center {
     text-align: center;
+}
+
+.text_justify {
+    text-align: justify;
 }
 
 .border_white {
@@ -362,6 +438,10 @@
     align-items: center;
 }
 
+.align_items_start {
+    align-items: start;
+}
+
 .justify_content_center {
     justify-content: center;
 }
@@ -386,6 +466,14 @@
     gap: 1.5rem;
 }
 
+.gap_4 {
+    gap: 2rem;
+}
+
+.gap_5 {
+    gap: 3rem;
+}
+
 .p_1 {
     padding: 0.5rem;
 }
@@ -398,8 +486,28 @@
     padding: 2rem;
 }
 
+.pt_10 {
+    padding-top: 10rem;
+}
+
+.p_inline_1 {
+    padding-inline: 0.5rem;
+}
+
+.p_inline_3 {
+    padding-inline: 2rem;
+}
+
 .mt_5 {
     margin-top: 4rem;
+}
+
+.mt_4 {
+    margin-top: 3rem;
+}
+
+.mt_3 {
+    margin-top: 2rem;
 }
 
 .mt_2 {
@@ -410,12 +518,24 @@
     margin-top: 0.5rem !important;
 }
 
+.w_20 {
+    width: 20%;
+}
+
+.w_15 {
+    width: 15%;
+}
+
 .w_25 {
     width: 25%;
 }
 
 .w_30 {
     width: 30%;
+}
+
+.w_33 {
+    width: 33%;
 }
 
 .w_40 {
@@ -446,8 +566,16 @@
     height: 100%;
 }
 
+.h_100vh {
+    height: 100dvh;
+}
+
 .p_absolute {
     position: absolute;
+}
+
+.p_fixed {
+    position: fixed;
 }
 
 .p_relative {
@@ -505,6 +633,14 @@
     z-index: 1;
 }
 
+.z_index10 {
+    z-index: 10;
+}
+
+.z_indexM1 {
+    z-index: -1;
+}
+
 .pointer {
     cursor: pointer;
 }
@@ -517,15 +653,82 @@
     color: #ffc107;
 }
 
+.line_height_2 {
+    line-height: 2rem;
+}
+
+.cardImg {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.d_desktop_none {
+    display: none !important;
+}
+
 .card_image {
     top: -2rem;
     right: -2rem;
 }
 
-.bg_orange {
-    background-color: orange;
-}
+@media (max-width: 768px) {
+    .d_flex {
+        flex-wrap: wrap;
+    }
 
-.bg_pink {
-    background-color: pink;
+    .w_15 {
+        width: 40%;
+    }
+
+    .w_25 {
+        width: 100%;
+    }
+
+    .w_33 {
+        width: 100%;
+    }
+
+    .w_50 {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .banner {
+        padding: 3em 2rem;
+    }
+
+    .dicount {
+        left: 70vw !important;
+    }
+
+    .searchBox {
+        width: 80%;
+    }
+
+    .searchBox select,
+    .searchBox input {
+        width: 50%;
+    }
+
+    .mainBannerBoxLeft,
+    .mainBannerBoxRight {
+        width: 100%;
+    }
+
+    .productItem {
+        width: 100%;
+    }
+
+    .d_mobile_none {
+        display: none !important;
+    }
+
+    .d_desktop_none {
+        display: block !important;
+    }
 }
