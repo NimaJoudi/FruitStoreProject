@@ -250,6 +250,37 @@
         rgba(0, 0, 0, 0.464);
 }
 
+/* Other CSS Styles */
+
+.arrowIcon {
+    width: 1rem;
+}
+
+.topScroll {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    color: #003500;
+    opacity: 30%;
+    transition: all 1s;
+    outline: 2px solid #003500;
+    outline-offset: 2px;
+    font-size: 1.5rem;
+}
+
+.topScroll:hover {
+    opacity: 100%;
+    box-shadow: 0 0 1rem #003500;
+    background-color: #003500;
+    color: white;
+}
+
 /* CSS Classes */
 .mt_1 {
     margin-top: 1rem;
@@ -258,18 +289,23 @@
 .bg_white {
     background-color: #ffffff;
 }
+
 .bg_green {
     background-color: #0a490a;
 }
+
 .bg_yellow {
     background-color: #ffc107;
 }
+
 .text_white {
     color: #ffffff !important;
 }
+
 .text_yellow {
     color: #ffc107;
 }
+
 .text_green {
     color: #0a490a;
 }
@@ -277,15 +313,19 @@
 .text_1 {
     font-size: 0.5rem;
 }
+
 .text_2 {
     font-size: 1rem;
 }
+
 .text_3 {
     font-size: 1.5rem;
 }
+
 .text_4 {
     font-size: 2rem;
 }
+
 .text_bold {
     font-weight: bolder;
 }
@@ -297,9 +337,11 @@
 .border_white {
     border: 2px solid #fff;
 }
+
 .border_green {
     border: 2px solid #0a490a;
 }
+
 .border_none {
     border: none;
 }
@@ -307,9 +349,11 @@
 .rounded_1 {
     border-radius: 0.5rem;
 }
+
 .rounded_2 {
     border-radius: 1rem;
 }
+
 .d_flex {
     display: flex;
 }
@@ -321,6 +365,7 @@
 .justify_content_center {
     justify-content: center;
 }
+
 .justify_content_space {
     justify-content: space-between;
 }
@@ -332,12 +377,13 @@
 .gap_1 {
     gap: 0.5rem;
 }
+
 .gap_2 {
     gap: 1rem;
 }
 
-.gap_3{
-	gap: 1.5rem;
+.gap_3 {
+    gap: 1.5rem;
 }
 
 .p_1 {
@@ -347,6 +393,7 @@
 .p_2 {
     padding: 1rem;
 }
+
 .p_3 {
     padding: 2rem;
 }
@@ -354,9 +401,11 @@
 .mt_5 {
     margin-top: 4rem;
 }
+
 .mt_2 {
     margin-top: 1rem;
 }
+
 .mt_1 {
     margin-top: 0.5rem !important;
 }
@@ -364,27 +413,35 @@
 .w_25 {
     width: 25%;
 }
+
 .w_30 {
     width: 30%;
 }
+
 .w_40 {
     width: 40%;
 }
+
 .w_60 {
     width: 60%;
 }
+
 .w_70 {
     width: 70%;
 }
+
 .w_80 {
     width: 80%;
 }
+
 .w_50 {
     width: 50%;
 }
+
 .w_100 {
     width: 100%;
 }
+
 .h_100 {
     height: 100%;
 }
@@ -392,9 +449,11 @@
 .p_absolute {
     position: absolute;
 }
+
 .p_relative {
     position: relative;
 }
+
 .p_sticky {
     position: sticky;
     top: 0;
@@ -409,30 +468,39 @@
 .top_0 {
     top: 0;
 }
+
 .top_1 {
     top: 0.5rem;
 }
+
 .left_m1 {
     left: -1rem !important;
 }
+
 .right_m1 {
     right: -1rem !important;
 }
+
 .left_0 {
     left: 0 !important;
 }
+
 .right_0 {
     right: 0 !important;
 }
+
 .right_1 {
     right: 0.5rem;
 }
+
 .right_2 {
     right: 1.5rem;
 }
+
 .left_1 {
     left: 0.5rem;
 }
+
 .z_index1 {
     z-index: 1;
 }
@@ -450,14 +518,14 @@
 }
 
 .card_image {
-	top: -2rem;
-	right: -2rem;
+    top: -2rem;
+    right: -2rem;
 }
 
-.bg_orange{
-	background-color: orange;
+.bg_orange {
+    background-color: orange;
 }
 
-.bg_pink{
-	background-color: pink;
+.bg_pink {
+    background-color: pink;
 }
