@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #0a490a;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.searchBox {
+    height: 2rem;
+    position: relative;
+    display: flex;
+}
+
+.searchBox img {
+    position: absolute;
+    left: -28px;
+    height: 100%;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.searchBox select,
+.searchBox input {
+    border-style: none;
+    height: 100%;
+    background: transparent;
+    color: inherit;
+    padding-inline: 1rem;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.searchBox select option {
+    color: black;
+}
+
+.operation {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.iconBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    font-size: 0.5rem;
+}
+
+.iconBox img {
+    transform: scale(0.6);
+}
+
+.banner {
+    background-color: #ffc107;
+    padding: 3em 5rem;
+    color: #0a490a;
+    position: relative;
+}
+
+.banner .badge {
+    background-color: #b4c8b1;
+    padding: 0.3em 1rem;
+    border-radius: 0.8rem;
+    font-size: 0.8rem;
+}
+
+.title {
+    font-size: 5rem;
+}
+
+.about {
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+.bannerButton {
+    font-size: 1rem;
+    padding: 0.3rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #b4c8b1;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    color: inherit;
+}
+
+.discount {
+    position: absolute;
+    text-align: center;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 6rem;
+    display: inline-block;
+}
+
+.discount img {
+    width: 100%;
+}
+
+.discount strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: white;
+}
+
+.fruitsBanner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 35%;
+}
+
+.fruitsBanner img {
+    width: 100%;
+}
+
+/* Container Styles */
+
+.titleIntroduction {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.titleIntroduction strong {
+    font-size: 2rem;
+    color: #003500;
+}
+
+.productsSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.productItem {
+    width: 20%;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+
+.productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productInformation {
+    position: absolute;
+    bottom: 0;
+    padding: 0.8rem;
+    z-index: 1;
+}
+
+.productInformation h4 {
+    color: #ffc107;
+}
+
+.productInformation p {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.productInformation button,
+.productButton {
+    background-color: #ffc107;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    color: #0a490a;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+}
+
+.productInformation img,
+.productButton img {
+    width: 0.5rem;
+}
+
+.productCover {
+    position: absolute;
+    background-color: rgba(13, 11, 11, 0.501);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: all 1s;
+}
+
+.productItem:hover .productCover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* CSS Classes */
+.mt_1 {
+    margin-top: 1rem;
+}
